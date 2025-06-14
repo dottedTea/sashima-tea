@@ -4,7 +4,7 @@ import { EXTERNAL_URL } from '@/constants';
 
 <template>
   <main class="md:grid md:grid-cols-[1fr_auto] h-full">
-    <section class="p-5 bg-white/50">
+    <section class="p-5 bg-white/50 space-y-5 z-section relative">
       <div class="leading-8">
         <p>
           茨城県公認VTuberを目指す、茶芝間ティー（さしまてぃー）と申します！
@@ -23,6 +23,26 @@ import { EXTERNAL_URL } from '@/constants';
           <span>フロントエンドエンジニア</span>
         </p>
       </div>
+
+      <div>
+        <h2>ニュース</h2>
+        <ul>
+          <li>
+            <p>2025/06/24</p>
+            <p>VTuberデビューしました！</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hidden md:block">
+        <iframe class="w-full aspect-video" src="https://www.youtube-nocookie.com/embed/videoseries?si=KHTmuBzDW839mp-e&amp;list=PLlIIRUvyBd95Xu0OtxPDx0SflFggHjfoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="flex justify-around">
+        <GlobalIcon name="original:x" color="youtube" class="w-10 h-10" />
+        <GlobalIcon name="original:youtube" color="youtube" class="w-10 h-10" />
+        <GlobalIcon name="original:tiktok" color="youtube" class="w-10 h-10" />
+      </div>
     </section>
 
     <GlobalImage
@@ -30,8 +50,7 @@ import { EXTERNAL_URL } from '@/constants';
       alt="茶芝間ティー 立ち絵"
       fit="inside"
       preload
-      class="md:h-[calc(100svh-120px)] absolute bottom-0 md:relative"
+      class="md:h-[calc(100svh-120px)] z-base absolute bottom-0 md:relative"
     />
-    <!-- <GlobalIcon name="original:menu" color="brown" class="w-10 h-10" /> -->
   </main>
 </template>
