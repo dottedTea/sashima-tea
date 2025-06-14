@@ -9,6 +9,7 @@ export default {
       colors: {
         brown: '#a09b65',
         green: '#4b7121',
+        orange: '#B67349',
       },
       width: {
         container: '1280px',

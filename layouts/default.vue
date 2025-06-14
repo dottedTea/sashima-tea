@@ -6,25 +6,43 @@ const isMenuOpen = ref<boolean>(false);
 <template>
   <div class="max-w-container mx-5 flex flex-col h-screen relative">
     <GlobalHeader :is-menu-open="isMenuOpen" @toggleMenu="isMenuOpen = !isMenuOpen" />
-    <main class="grow"><slot /></main>
-    <aside class="fixed inset-0">
-      <Transition name="slide" class="transition-transform translate-y-[20vh] duration-1000">
-        <GlobalHamburgerMenu v-if="isMenuOpen" />
-      </Transition>
-    </aside>
+    <slot class="grow" />
+
+    <Transition name="fade">
+      <div
+        v-if="isMenuOpen"
+        class="fixed inset-0 transition-colors bg-black/50 duration-1000"
+        @click.self="isMenuOpen = false"
+      />
+    </Transition>
+    <Transition name="slide" class="absolute z-menu transition-[top] top-[-75vh] duration-1000">
+      <GlobalHamburgerMenu v-if="isMenuOpen" />
+    </Transition>
   </div>
 </template>
 
 <style scoped>
 /** ハンバーガーメニューが閉じた状態 */
+.fade-enter-from,
+.fade-leave-to {
+  @apply bg-black/0;
+}
+
+/** ハンバーガーメニューが開いた状態 */
+.fade-enter-to,
+.fade-leave-from {
+  @apply bg-black/50;
+}
+
+/** ハンバーガーメニューが閉じた状態 */
 .slide-enter-from,
 .slide-leave-to {
-  @apply translate-y-[200vw];
+  @apply top-[100vh];
 }
 
 /** ハンバーガーメニューが開いた状態 */
 .slide-enter-to,
 .slide-leave-from {
-  @apply translate-y-[20vh];
+  @apply top-[-75vh];
 }
 </style>

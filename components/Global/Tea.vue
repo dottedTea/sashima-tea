@@ -1,5 +1,5 @@
 <template>
-  <div class="relative z-menu">
+  <div class="relative">
     <div class="
       absolute z-background -left-[150vw]
       w-[400vw] h-[400vw]
