@@ -1,38 +1,31 @@
 <script setup lang="ts">
+import { EXTERNAL_URL, INTERNAL_URL } from "@/constants"
+
 /** メニュー一覧 */
 const HEADER_NAVIGATION = [
   {
     label: 'お前誰なん？',
-    id: 'about',
+    href: INTERNAL_URL.ABOUT,
   },
   {
-    label: 'アーカイブ',
-    id: 'archive',
+    label: 'ギャラリー',
+    href: INTERNAL_URL.GALLERY,
   },
   {
     label: 'お問い合わせ',
-    id: 'contact',
+    href: EXTERNAL_URL.CONTACT,
   },
 ] as const;
-
-/** IDの要素へスクロールする */
-const scrollToId = (id: string) => {
-  const element = document.getElementById(id);
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-};
 </script>
 
 <template>
   <GlobalTea>
-    <nav class="h-full">
-      <ul class="h-full flex items-center">
-        <li v-for="{label, id} in HEADER_NAVIGATION" :key="label" class="h-full">
-          <button
-            class="h-full hover:text-green text-lg transition-colors px-5"
-            @click="scrollToId(id)"
-          >{{ label }}</button>
+    <nav class="absolute">
+      <ul class="flex items-center">
+        <li v-for="{label, href} in HEADER_NAVIGATION" :key="label" class="h-full">
+          <GlobalLink :href="href">
+            {{ label }}
+          </GlobalLink>
         </li>
       </ul>
     </nav>

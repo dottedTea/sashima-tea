@@ -4,18 +4,22 @@ const isMenuOpen = ref<boolean>(false);
 </script>
 
 <template>
-  <div class="max-w-container mx-5 flex flex-col h-screen relative">
-    <GlobalHeader :is-menu-open="isMenuOpen" @toggleMenu="isMenuOpen = !isMenuOpen" />
-    <slot class="grow" />
+  <div class="max-w-container flex flex-col h-screen relative">
+    <GlobalHeader
+      :is-menu-open="isMenuOpen"
+      @toggleMenu="isMenuOpen = !isMenuOpen"
+      class="mx-5 py-4 relative z-header"
+    />
+    <slot class="grow mx-5" />
 
-    <Transition name="fade">
+    <Transition name="fade" class="absolute inset-0 z-panel">
       <div
         v-if="isMenuOpen"
-        class="fixed inset-0 transition-colors bg-black/50 duration-1000"
+        class="transition-colors bg-black/50 duration-1000"
         @click.self="isMenuOpen = false"
       />
     </Transition>
-    <Transition name="slide" class="absolute z-menu transition-[top] top-[-75vh] duration-1000">
+    <Transition name="slide" class="absolute z-menu transition-[top] top-[-80vh] duration-1000">
       <GlobalHamburgerMenu v-if="isMenuOpen" />
     </Transition>
   </div>
@@ -43,6 +47,6 @@ const isMenuOpen = ref<boolean>(false);
 /** ハンバーガーメニューが開いた状態 */
 .slide-enter-to,
 .slide-leave-from {
-  @apply top-[-75vh];
+  @apply top-[-80vh];
 }
 </style>

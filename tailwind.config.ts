@@ -18,8 +18,9 @@ export default {
         container: '1280px',
       },
       zIndex: {
-        menu: 100,
-        header: 50,
+        menu: 150,
+        header: 100,
+        panel: 50,
         section: 1,
         base: 0,
         background: -1,

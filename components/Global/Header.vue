@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { INTERNAL_URL } from '@/constants';
+
 type Props = {
   /** ハンバーガーメニューが開いているか */
   isMenuOpen: boolean;
@@ -11,15 +13,17 @@ const emits = defineEmits<{
 </script>
 
 <template>
-  <header class="h-24 z-header flex justify-between items-center sticky top-0 py-5">
+  <header class="h-24 flex justify-between items-center">
     <h1 class="relative">
-      <GlobalImage
-        src="/images/logo.png"
-        height="64px"
-        alt="茶芝間ティー"
-        fit="inside"
-        preload
-      />
+      <GlobalLink :href="INTERNAL_URL.TOP">
+        <GlobalImage
+          src="/images/logo.png"
+          height="64px"
+          alt="茶芝間ティー"
+          fit="inside"
+          preload
+        />
+      </GlobalLink>
     </h1>
 
     <button class="relative" @click="emits('toggleMenu')">
