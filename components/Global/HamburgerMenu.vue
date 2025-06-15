@@ -20,14 +20,28 @@ const HEADER_NAVIGATION = [
 
 <template>
   <GlobalTea>
-    <nav class="absolute">
-      <ul class="flex items-center">
-        <li v-for="{label, href} in HEADER_NAVIGATION" :key="label" class="h-full">
-          <GlobalLink :href="href">
-            {{ label }}
-          </GlobalLink>
-        </li>
-      </ul>
-    </nav>
+    <div class="absolute inset-0 flex flex-col px-5 mx-auto">
+      <nav class="pt-20 md:pt-40">
+        <ul class="flex flex-col md:flex-row gap-x-10 gap-y-8 justify-center">
+          <li v-for="{label, href} in HEADER_NAVIGATION" :key="label" class="h-full">
+            <GlobalLink :href="href">
+              {{ label }}
+            </GlobalLink>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="pt-10 flex justify-center gap-10">
+        <GlobalLink :href="EXTERNAL_URL.X">
+          <GlobalIcon name="original:x" color="x" class="w-10 h-10" />
+        </GlobalLink>
+        <GlobalLink :href="EXTERNAL_URL.YOUTUBE">
+          <GlobalIcon name="original:youtube" color="youtube" class="w-10 h-10" />
+        </GlobalLink>
+        <GlobalLink :href="EXTERNAL_URL.TIKTOK">
+          <GlobalIcon name="original:tiktok" color="tiktok" class="w-10 h-10" />
+        </GlobalLink>
+      </div>
+    </div>
   </GlobalTea>
 </template>

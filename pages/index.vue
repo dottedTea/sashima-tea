@@ -9,15 +9,15 @@ import { EXTERNAL_URL, INTERNAL_URL } from '@/constants';
         <p>
           茨城県公認VTuberを目指す、茶芝間ティー（さしまてぃー）と申します！
         </p>
-        <p>
+        <p class="hidden md:block">
           カイロソフトをメインとしたシミュレーションゲーム、茨城に関する動画を週5〜7本しています。
         </p>
-        <p>
-          いばらき観光マイスターでありフロントエンドエンジニア。
-          <GlobalLink :href="INTERNAL_URL.ABOUT">
-            さらに詳しくはこちら
-          </GlobalLink>
+        <p class="hidden md:block">
+          いばらき観光マイスターでありフロントエンドエンジニアです。
         </p>
+        <GlobalLink :href="INTERNAL_URL.ABOUT">
+          さらに詳しくはこちら →
+        </GlobalLink>
       </section>
 
       <section class="px-5 py-4 bg-white/50 mt-auto">
@@ -52,7 +52,7 @@ import { EXTERNAL_URL, INTERNAL_URL } from '@/constants';
       alt="茶芝間ティー 立ち絵"
       fit="inside"
       preload
-      class="md:mt-auto md:max-h-[calc(100vh-120px)] z-base absolute inset-x-0 bottom-0 md:relative"
+      class="md:mt-auto md:max-h-[calc(100vh-120px)] z-base absolute inset-x-0 top-52 md:top-auto md:bottom-0 md:relative"
     />
   </main>
 </template>

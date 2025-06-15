@@ -9,7 +9,7 @@ export default {
       colors: {
         brown: '#a09b65',
         green: '#4b7121',
-        orange: '#B67349',
+        orange: '#ff9933',
         x: '#0F1419',
         youtube: '#ff0033',
         tiktok: '#000000',

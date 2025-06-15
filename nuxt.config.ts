@@ -25,13 +25,7 @@ export default defineNuxtConfig({
     },
   ],
   devtools: { enabled: true },
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxt/icon',
-    '@nuxt/image',
-    'nuxt-security',
-    '@nuxtjs/device',
-  ],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxt/image', 'nuxt-security', '@nuxtjs/device', "nuxt-easy-lightbox"],
   icon: {
     provider: 'server',
     customCollections: [
