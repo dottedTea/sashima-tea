@@ -4,7 +4,7 @@ import { EXTERNAL_URL, INTERNAL_URL } from "@/constants"
 /** メニュー一覧 */
 const HEADER_NAVIGATION = [
   {
-    label: 'お前誰なん？',
+    label: '動画や実績など',
     href: INTERNAL_URL.ABOUT,
   },
   {
@@ -16,6 +16,10 @@ const HEADER_NAVIGATION = [
     href: EXTERNAL_URL.CONTACT,
   },
 ] as const;
+
+const emits = defineEmits<{
+  (event: "closeMenu"): void;
+}>();
 </script>
 
 <template>
@@ -24,7 +28,7 @@ const HEADER_NAVIGATION = [
       <nav class="pt-20 md:pt-40">
         <ul class="flex flex-col md:flex-row gap-x-10 gap-y-8 justify-center">
           <li v-for="{label, href} in HEADER_NAVIGATION" :key="label" class="h-full">
-            <GlobalLink :href="href">
+            <GlobalLink :href="href" @click="emits('closeMenu')">
               {{ label }}
             </GlobalLink>
           </li>

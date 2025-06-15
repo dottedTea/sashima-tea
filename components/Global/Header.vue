@@ -9,13 +9,14 @@ const { isMenuOpen } = defineProps<Props>();
 
 const emits = defineEmits<{
   (event: "toggleMenu"): void;
+  (event: "closeMenu"): void;
 }>();
 </script>
 
 <template>
   <header class="h-24 flex justify-between items-center">
     <h1 class="relative">
-      <GlobalLink :href="INTERNAL_URL.TOP">
+      <GlobalLink :href="INTERNAL_URL.TOP" @click="emits('closeMenu')">
         <GlobalImage
           src="/images/logo.png"
           height="64px"

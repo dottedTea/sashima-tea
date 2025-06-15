@@ -9,14 +9,14 @@ import { EXTERNAL_URL, INTERNAL_URL } from '@/constants';
         <p>
           茨城県公認VTuberを目指す、茶芝間ティー（さしまてぃー）と申します！
         </p>
-        <p class="hidden md:block">
+        <p>
           カイロソフトをメインとしたシミュレーションゲーム、茨城に関する動画を週5〜7本しています。
         </p>
-        <p class="hidden md:block">
+        <p>
           いばらき観光マイスターでありフロントエンドエンジニアです。
         </p>
         <GlobalLink :href="INTERNAL_URL.ABOUT">
-          さらに詳しくはこちら →
+          動画や実績など詳しくはこちら →
         </GlobalLink>
       </section>
 
@@ -31,7 +31,6 @@ import { EXTERNAL_URL, INTERNAL_URL } from '@/constants';
 
       <div class="hidden md:flex mt-4">
         <iframe class="shrink-1 basis-[600px] mx-auto aspect-video" src="https://www.youtube-nocookie.com/embed/videoseries?si=KHTmuBzDW839mp-e&amp;list=PLlIIRUvyBd95Xu0OtxPDx0SflFggHjfoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <!-- <iframe class="max-h-60 aspect-[9/16]" src="https://www.youtube-nocookie.com/embed/2X8T4G_tBqc?si=TR-ncn2y_335Ztrt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
       </div>
 
       <div class="flex justify-around mt-4">
@@ -52,7 +51,7 @@ import { EXTERNAL_URL, INTERNAL_URL } from '@/constants';
       alt="茶芝間ティー 立ち絵"
       fit="inside"
       preload
-      class="md:mt-auto md:max-h-[calc(100vh-120px)] z-base absolute inset-x-0 top-52 md:top-auto md:bottom-0 md:relative"
+      class="md:w-[498px] md:mt-auto md:max-h-[calc(100vh-120px)] z-base absolute inset-x-0 top-[380px] md:top-auto md:bottom-0 md:relative"
     />
   </main>
 </template>

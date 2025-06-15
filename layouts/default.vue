@@ -8,6 +8,7 @@ const isMenuOpen = ref<boolean>(false);
     <GlobalHeader
       :is-menu-open="isMenuOpen"
       @toggleMenu="isMenuOpen = !isMenuOpen"
+      @closeMenu="isMenuOpen = false"
       class="mx-5 py-4 relative z-header"
     />
     <slot class="grow mx-5" />
@@ -20,7 +21,7 @@ const isMenuOpen = ref<boolean>(false);
       />
     </Transition>
     <Transition name="slide" class="absolute z-menu transition-[top] top-[-80vh] duration-1000">
-      <GlobalHamburgerMenu v-if="isMenuOpen" />
+      <GlobalHamburgerMenu v-if="isMenuOpen" @closeMenu="isMenuOpen = false" />
     </Transition>
   </div>
 </template>
