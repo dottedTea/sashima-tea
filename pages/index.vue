@@ -6,7 +6,7 @@ const { isMobile } = useDevice();
 </script>
 
 <template>
-  <main class="md:grid md:grid-cols-[1fr_auto] h-full pb-5 mx-5">
+  <main class="md:grid md:grid-cols-[1fr_480px] pb-5 px-5 max-w-container">
     <div class="h-full grid gap-4">
       <section class="px-5 py-4 bg-white/50 leading-8">
         <p>
@@ -35,8 +35,8 @@ const { isMobile } = useDevice();
           </ul>
         </section>
 
-        <div class="hidden md:flex">
-          <iframe class="shrink-1 basis-[600px] mx-auto aspect-video" src="https://www.youtube-nocookie.com/embed/videoseries?si=KHTmuBzDW839mp-e&amp;list=PLlIIRUvyBd95Xu0OtxPDx0SflFggHjfoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="w-full">
+          <iframe class="w-full aspect-video" src="https://www.youtube-nocookie.com/embed/videoseries?si=KHTmuBzDW839mp-e&amp;list=PLlIIRUvyBd95Xu0OtxPDx0SflFggHjfoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </template>
     </div>
@@ -46,7 +46,7 @@ const { isMobile } = useDevice();
       alt="茶芝間ティー 立ち絵"
       fit="inside"
       preload
-      class="overflow-hidden md:w-[498px] md:mt-auto md:max-h-[calc(100vh-120px)]"
+      class="md:sticky md:top-10"
     />
 
     <template v-if="isMobile">
@@ -63,7 +63,7 @@ const { isMobile } = useDevice();
         <iframe class="shrink-1 basis-[600px] mx-auto aspect-video" src="https://www.youtube-nocookie.com/embed/videoseries?si=KHTmuBzDW839mp-e&amp;list=PLlIIRUvyBd95Xu0OtxPDx0SflFggHjfoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
 
-      <GlobalSocialMedia />
+      <GlobalSocialMedia class="mt-4" />
     </template>
   </main>
 </template>

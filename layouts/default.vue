@@ -4,12 +4,12 @@ const isMenuOpen = ref<boolean>(false);
 </script>
 
 <template>
-  <div class="max-w-container flex flex-col relative">
+  <div class="flex flex-col relative">
     <GlobalHeader
       :is-menu-open="isMenuOpen"
       @toggleMenu="isMenuOpen = !isMenuOpen"
       @closeMenu="isMenuOpen = false"
-      class="mx-5 py-4 relative z-header"
+      class="mx-5 py-4 z-header sticky top-0"
     />
     <slot class="grow mx-5" />
 

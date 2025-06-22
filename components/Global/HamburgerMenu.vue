@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { enableScroll, disableScroll } from "@/utils";
 import { EXTERNAL_URL, INTERNAL_URL } from "@/constants"
 
 /** メニュー一覧 */
@@ -21,15 +22,9 @@ const emits = defineEmits<{
   (event: "closeMenu"): void;
 }>();
 
-onMounted(() => {
-  document.body.style.overflow = "hidden";
-  document.body.style.height = "100vh";
-});
+onMounted(() => disableScroll());
 
-onUnmounted(() => {
-  document.body.style.overflow = "auto";
-  document.body.style.height = "auto";
-});
+onUnmounted(() => enableScroll());
 </script>
 
 <template>

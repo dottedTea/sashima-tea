@@ -1,6 +1,8 @@
 <script setup lang="ts">
-const visibleRef = ref(false);
-const indexRef = ref(0);
+import { enableScroll, disableScroll } from "@/utils";
+
+const isModalVisible = ref(false);
+const currentIndex = ref(0);
 
 const imgs = [
   { src: "/images/setting.png", title: "三面図\nデザイン/イラスト 乙原コウ様/Vグラ様/©︎LUZ\nVグラHP:https://www.vgra-luz.com/" },
@@ -10,23 +12,28 @@ const imgs = [
   { src: "/images/standing.png", title: "素体図\nデザイン/イラスト 乙原コウ様/Vグラ様/©︎LUZ\nVグラHP:https://www.vgra-luz.com/" },
 ];
 
-const showImg = (index: number) => {
-  indexRef.value = index;
-  visibleRef.value = true;
+const openModal = (index: number) => {
+  disableScroll();
+  currentIndex.value = index;
+  isModalVisible.value = true;
 };
-const onHide = () => (visibleRef.value = false);
+
+const closeModal = () => {
+  isModalVisible.value = false;
+  enableScroll();
+};
 </script>
 
 <template>
-  <main class="mb-4 px-5 h-full overflow-y-scroll">
-    <h2 class="text-xl mb-4">ギャラリー</h2>
+  <main class="pb-8 px-5 max-w-container">
+    <h2 class="text-xl mb-4 text-center">ギャラリー</h2>
 
     <div class="grid md:grid-cols-3 gap-5">
       <div
         v-for="({ src, title }, index) in imgs"
         :key="index"
         class="pic cursor-pointer relative bg-black/50"
-        @click="() => showImg(index)"
+        @click="openModal(index)"
       >
         <div class="absolute bg-white/80 inset-x-0 bottom-0 p-2 grid text-center">
           <p class="whitespace-pre-wrap text-sm mt-2">{{ title }}</p>
@@ -35,11 +42,11 @@ const onHide = () => (visibleRef.value = false);
       </div>
     </div>
     <VueEasyLightbox
-      :visible="visibleRef"
+      :visible="isModalVisible"
       :imgs="imgs"
-      :index="indexRef"
+      :index="currentIndex"
       loop
-      @hide="onHide"
+      @hide="closeModal"
     />
   </main>
 </template>

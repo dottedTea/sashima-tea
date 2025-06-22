@@ -14,13 +14,13 @@ const { error } = defineProps<Props>();
 
 <template>
   <div class="bg-[url('/images/background.png')] bg-cover">
-    <div class="max-w-container flex flex-col h-screen relative">
+    <div class="flex flex-col h-screen relative">
       <GlobalHeader
         :is-menu-open="isMenuOpen"
         @toggleMenu="isMenuOpen = !isMenuOpen"
         class="mx-5 py-4 relative z-header"
       />
-      <main class="grow m-5">
+      <main class="grow p-5 max-w-container">
         <p>{{ error?.statusCode === 404 ? 'お探しのページはございません。' : 'エラーが発生しました。' }}</p>
         <p class="pt-5"><GlobalLink :href="INTERNAL_URL.TOP">TOPに戻る</GlobalLink></p>
       </main>

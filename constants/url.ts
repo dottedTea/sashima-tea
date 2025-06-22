@@ -24,6 +24,12 @@ export const EXTERNAL_URL = {
   WEB_DESIGN_SKILL: 'https://www.webdesign.gr.jp/',
   /** 基本情報技術者試験 */
   IPA_FE: 'https://www.ipa.go.jp/shiken/kubun/fe.html',
+  /** 情報セキュリティマネジメント試験 */
+  IPA_SG: "https://www.ipa.go.jp/shiken/kubun/sg/index.html",
   /** 色彩検定 */
   ADVANCE_FORWARD_TRUE_COLOR: 'https://www.aft.or.jp/',
+  /** JSTQB 認定テスト技術者 */
+  JSTQB: "https://jstqb.jp/index.html",
+  /** CG-ARTS */
+  CG_ARTS: "https://www.cgarts.or.jp/",
 } as const;
