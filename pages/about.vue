@@ -85,7 +85,7 @@ const CERTIFICATIONS = [
         <h3>資格</h3>
         <ul>
           <li v-for="{name, href} in CERTIFICATIONS" :key="name">
-            ・<GlobalLink :href="href" target="_blank">{{ name }}</GlobalLink>
+            ・<GlobalLink :href="href" target="_blank" rel="nofollow">{{ name }}</GlobalLink>
           </li>
         </ul>
       </section>
