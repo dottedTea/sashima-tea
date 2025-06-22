@@ -27,11 +27,6 @@ export default defineNuxtConfig({
     },
   ],
   devtools: { enabled: true },
-  nitro: {
-    output: {
-      publicDir: path.join(__dirname, 'docs')
-    }
-  },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxt/image', 'nuxt-security', '@nuxtjs/device', "nuxt-easy-lightbox"],
   icon: {
     provider: 'server',
