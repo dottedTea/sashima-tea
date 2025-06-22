@@ -4,7 +4,7 @@ const isMenuOpen = ref<boolean>(false);
 </script>
 
 <template>
-  <div class="max-w-container flex flex-col h-screen relative">
+  <div class="max-w-container flex flex-col relative">
     <GlobalHeader
       :is-menu-open="isMenuOpen"
       @toggleMenu="isMenuOpen = !isMenuOpen"
@@ -20,7 +20,7 @@ const isMenuOpen = ref<boolean>(false);
         @click.self="isMenuOpen = false"
       />
     </Transition>
-    <Transition name="slide" class="absolute z-menu transition-[top] top-[-80vh] duration-1000">
+    <Transition name="slide" class="absolute z-menu transition-[top] top-[20vh] duration-1000">
       <GlobalHamburgerMenu v-if="isMenuOpen" @closeMenu="isMenuOpen = false" />
     </Transition>
   </div>
@@ -48,6 +48,6 @@ const isMenuOpen = ref<boolean>(false);
 /** ハンバーガーメニューが開いた状態 */
 .slide-enter-to,
 .slide-leave-from {
-  @apply top-[-80vh];
+  @apply top-[20vh];
 }
 </style>

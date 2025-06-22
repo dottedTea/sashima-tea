@@ -9,6 +9,6 @@
   }
 
   body {
-    @apply overflow-hidden;
+    min-height: 100vh;
   }
 }
