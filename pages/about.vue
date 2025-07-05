@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { EXTERNAL_URL } from '@/constants';
 
-/** 資格 */
+/** 動画 */
 const VIDEOS = [
   {
     src: "https://www.youtube-nocookie.com/embed/videoseries?si=VHWvqmR1RqIsDsxd&amp;list=PLlIIRUvyBd94BRbbx0MFuh355UTRMCy0H",
@@ -44,8 +44,8 @@ const CERTIFICATIONS = [
     href: EXTERNAL_URL.ADVANCE_FORWARD_TRUE_COLOR,
   },
   {
-    name: '基本情報技術者試験',
-    href: EXTERNAL_URL.IPA_FE,
+    name: '応用情報技術者試験',
+    href: EXTERNAL_URL.IPA_AP,
   },
   {
     name: 'CG-ARTS ディジタルメディアマイスター',
@@ -66,7 +66,7 @@ const CERTIFICATIONS = [
   <main class="pb-4 px-5 grid grid-cols-1 md:grid-cols-[1fr_320px] gap-4 max-w-container">
     <div class="space-y-4">
       <div>
-        <h2 class="text-xl mb-2 text-center">実績や案件など</h2>
+        <h2 class="text-xl mb-2 text-center">動画や実績など</h2>
         <p class="text-center">何かあれば軽率に<GlobalLink :href="EXTERNAL_URL.CONTACT">お問い合わせ</GlobalLink>ください。全力でお手伝いさせていただきます！</p>
         <GlobalImage src="/images/setting.png" class="mt-2" />
       </div>

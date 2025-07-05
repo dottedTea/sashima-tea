@@ -22,8 +22,8 @@ export const EXTERNAL_URL = {
   TIKTOK: 'https://www.tiktok.com/@dottedtea',
   /** ウェブデザイン技能検定 */
   WEB_DESIGN_SKILL: 'https://www.webdesign.gr.jp/',
-  /** 基本情報技術者試験 */
-  IPA_FE: 'https://www.ipa.go.jp/shiken/kubun/fe.html',
+  /** 応用情報技術者試験 */
+  IPA_AP: 'https://www.ipa.go.jp/shiken/kubun/ap.html',
   /** 情報セキュリティマネジメント試験 */
   IPA_SG: "https://www.ipa.go.jp/shiken/kubun/sg/index.html",
   /** 色彩検定 */

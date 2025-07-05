@@ -29,8 +29,12 @@ const { isMobile } = useDevice();
         <section class="px-5 py-4 bg-white/50 mt-auto">
           <h2>ニュース</h2>
           <ul class="text-sm max-h-20 space-y-0.5 overflow-y-scroll">
-            <li v-for="{ date, text } in news">
-              <p>{{ date }} {{ text }}</p>
+            <li v-for="{ date, text, link } in news">
+              <p class="space-x-2">
+                <span>{{ date }}</span>
+                <GlobalLink v-if="link" :href="link" target="_blank">{{ text }}</GlobalLink>
+                <span v-else>{{ text }}</span>
+              </p>
             </li>
           </ul>
         </section>
