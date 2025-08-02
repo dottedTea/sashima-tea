@@ -3,70 +3,70 @@ import { EXTERNAL_URL } from "@/constants";
 
 /** 動画 */
 const VIDEOS = [
-	{
-		src: "https://www.youtube-nocookie.com/embed/videoseries?si=VHWvqmR1RqIsDsxd&amp;list=PLlIIRUvyBd94BRbbx0MFuh355UTRMCy0H",
-		description:
-			"カイロソフトがあの国民的キャラクターとコラボ!?発売日当日に早速プレイしました。",
-		isVertical: false,
-	},
-	{
-		src: "https://www.youtube.com/embed/videoseries?si=UEDrrGvAmf-iNRPP&amp;list=PLlIIRUvyBd96tt4ezAbXhYcDveEJ3ptbS",
-		description:
-			"目指せ茨城公認VTuber！茨城県の魅力をたっぷり発信していきます。",
-		isVertical: true,
-	},
-	{
-		src: "https://www.youtube-nocookie.com/embed/videoseries?si=a2bV_11PXLUy9_2L&amp;list=PLlIIRUvyBd97buWLF98Qh_urx6BvC9ijF",
-		description:
-			"私の動画史上、一番編集凝ってます！実はAMONG USごく稀に主催しています。",
-		isVertical: false,
-	},
-	{
-		src: "https://www.youtube-nocookie.com/embed/videoseries?si=njMQkdPpLbRtxVrv&amp;list=PLlIIRUvyBd97fA0guMAbxq5h4y7uyBym_",
-		description:
-			"茨城×カイロソフト！空港を創るシミュレーションゲームで、茨城空港を再現します。",
-		isVertical: false,
-	},
+  {
+    src: "https://www.youtube-nocookie.com/embed/videoseries?si=VHWvqmR1RqIsDsxd&amp;list=PLlIIRUvyBd94BRbbx0MFuh355UTRMCy0H",
+    description:
+      "カイロソフトがあの国民的キャラクターとコラボ!?発売日当日に早速プレイしました。",
+    isVertical: false,
+  },
+  {
+    src: "https://www.youtube.com/embed/videoseries?si=UEDrrGvAmf-iNRPP&amp;list=PLlIIRUvyBd96tt4ezAbXhYcDveEJ3ptbS",
+    description:
+      "目指せ茨城公認VTuber！茨城県の魅力をたっぷり発信していきます。",
+    isVertical: true,
+  },
+  {
+    src: "https://www.youtube-nocookie.com/embed/videoseries?si=a2bV_11PXLUy9_2L&amp;list=PLlIIRUvyBd97buWLF98Qh_urx6BvC9ijF",
+    description:
+      "私の動画史上、一番編集凝ってます！実はAMONG USごく稀に主催しています。",
+    isVertical: false,
+  },
+  {
+    src: "https://www.youtube-nocookie.com/embed/videoseries?si=njMQkdPpLbRtxVrv&amp;list=PLlIIRUvyBd97fA0guMAbxq5h4y7uyBym_",
+    description:
+      "茨城×カイロソフト！空港を創るシミュレーションゲームで、茨城空港を再現します。",
+    isVertical: false,
+  },
 ] as const;
 
 /** 実績 */
 const ACHIEVEMENTS = [
-	{
-		name: "第1回ご当地Vtuber PR王決定戦",
-		href: "https://vregion.jp/pr-event",
-	},
+  {
+    name: "第1回ご当地Vtuber PR王決定戦",
+    href: "https://vregion.jp/pr-event",
+  },
 ] as const;
 
 /** 資格 */
 const CERTIFICATIONS = [
-	{
-		name: "いばらき観光マイスター",
-		href: EXTERNAL_URL.IBARAKI_TOURISM_MASTER,
-	},
-	{
-		name: "ウェブデザイン技能検定2級",
-		href: EXTERNAL_URL.WEB_DESIGN_SKILL,
-	},
-	{
-		name: "色彩検定2級",
-		href: EXTERNAL_URL.ADVANCE_FORWARD_TRUE_COLOR,
-	},
-	{
-		name: "応用情報技術者試験",
-		href: EXTERNAL_URL.IPA_AP,
-	},
-	{
-		name: "CG-ARTS ディジタルメディアマイスター",
-		href: EXTERNAL_URL.CG_ARTS,
-	},
-	{
-		name: "情報セキュリティマネジメント試験",
-		href: EXTERNAL_URL.IPA_SG,
-	},
-	{
-		name: "JSTQB 認定テスト技術者",
-		href: EXTERNAL_URL.JSTQB,
-	},
+  {
+    name: "いばらき観光マイスター",
+    href: EXTERNAL_URL.IBARAKI_TOURISM_MASTER,
+  },
+  {
+    name: "ウェブデザイン技能検定2級",
+    href: EXTERNAL_URL.WEB_DESIGN_SKILL,
+  },
+  {
+    name: "色彩検定2級",
+    href: EXTERNAL_URL.ADVANCE_FORWARD_TRUE_COLOR,
+  },
+  {
+    name: "応用情報技術者試験",
+    href: EXTERNAL_URL.IPA_AP,
+  },
+  {
+    name: "CG-ARTS ディジタルメディアマイスター",
+    href: EXTERNAL_URL.CG_ARTS,
+  },
+  {
+    name: "情報セキュリティマネジメント試験",
+    href: EXTERNAL_URL.IPA_SG,
+  },
+  {
+    name: "JSTQB 認定テスト技術者",
+    href: EXTERNAL_URL.JSTQB,
+  },
 ] as const;
 </script>
 

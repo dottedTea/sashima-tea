@@ -5,9 +5,9 @@ import { INTERNAL_URL } from "@/constants";
 const isMenuOpen = ref<boolean>(false);
 
 type Props = {
-	error?: {
-		statusCode: number;
-	};
+  error?: {
+    statusCode: number;
+  };
 };
 const { error } = defineProps<Props>();
 </script>

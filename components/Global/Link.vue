@@ -1,9 +1,9 @@
 <script setup lang="ts">
 type Props = {
-	/** 遷移先 */
-	href: string;
-	/** 別タブで開くか */
-	target?: "_blank";
+  /** 遷移先 */
+  href: string;
+  /** 別タブで開くか */
+  target?: "_blank";
 };
 const { href, target } = defineProps<Props>();
 </script>

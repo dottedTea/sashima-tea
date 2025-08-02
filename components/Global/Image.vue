@@ -4,43 +4,43 @@
  * @see https://image.nuxt.com/usage/nuxt-img
  */
 type Props = {
-	src: string;
-	width?: string;
-	height?: string;
-	alt?: string;
-	sizes?: string;
-	densities?: string;
-	placeholder?: string | boolean | number | Array<number>;
-	placeholderClass?: string;
-	provider?: string;
-	preset?: string;
-	format?: string;
-	quality?: string;
-	fit?: "cover" | "contain" | "fill" | "inside" | "outside";
-	preload?: boolean;
-	loading?: "lazy";
-	nonce?: string;
-	onLoad?: () => void;
+  src: string;
+  width?: string;
+  height?: string;
+  alt?: string;
+  sizes?: string;
+  densities?: string;
+  placeholder?: string | boolean | number | Array<number>;
+  placeholderClass?: string;
+  provider?: string;
+  preset?: string;
+  format?: string;
+  quality?: string;
+  fit?: "cover" | "contain" | "fill" | "inside" | "outside";
+  preload?: boolean;
+  loading?: "lazy";
+  nonce?: string;
+  onLoad?: () => void;
 };
 
 const {
-	src,
-	width,
-	height,
-	alt,
-	sizes,
-	densities,
-	placeholder,
-	placeholderClass,
-	provider,
-	preset,
-	format = "webp",
-	quality,
-	fit = "cover",
-	preload,
-	loading,
-	nonce,
-	onLoad,
+  src,
+  width,
+  height,
+  alt,
+  sizes,
+  densities,
+  placeholder,
+  placeholderClass,
+  provider,
+  preset,
+  format = "webp",
+  quality,
+  fit = "cover",
+  preload,
+  loading,
+  nonce,
+  onLoad,
 } = defineProps<Props>();
 </script>
 
