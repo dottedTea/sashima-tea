@@ -27,6 +27,10 @@ const VIDEOS = [
 
 /** 実績 */
 const ACHIEVEMENTS = [
+  {
+    name: '第1回ご当地Vtuber PR王決定戦',
+    href: 'https://vregion.jp/pr-event',
+  },
 ] as const;
 
 /** 資格 */
