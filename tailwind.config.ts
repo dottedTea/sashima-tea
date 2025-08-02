@@ -13,6 +13,7 @@ export default {
         x: "#0F1419",
         youtube: "#ff0033",
         tiktok: "#000000",
+        red: "#CA5937",
       },
       width: {
         container: "1280px",

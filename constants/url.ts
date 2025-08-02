@@ -33,4 +33,6 @@ export const EXTERNAL_URL = {
   JSTQB: "https://jstqb.jp/index.html",
   /** CG-ARTS */
   CG_ARTS: "https://www.cgarts.or.jp/",
+  /** 絶対音感オトダマスター */
+  OTODAMASTER: "https://www.nintendo.co.jp/ds/software/yotj/index.html",
 } as const;
