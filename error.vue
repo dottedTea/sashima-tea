@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { INTERNAL_URL } from '@/constants';
+import { INTERNAL_URL } from "@/constants";
 
 /** ハンバーガーメニューが開いているか */
 const isMenuOpen = ref<boolean>(false);
 
 type Props = {
-  error?: {
-    statusCode: number;
-  };
-}
+	error?: {
+		statusCode: number;
+	};
+};
 const { error } = defineProps<Props>();
 </script>
 

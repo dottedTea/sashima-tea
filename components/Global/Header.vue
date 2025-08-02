@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { INTERNAL_URL } from '@/constants';
+import { INTERNAL_URL } from "@/constants";
 
 type Props = {
-  /** ハンバーガーメニューが開いているか */
-  isMenuOpen: boolean;
+	/** ハンバーガーメニューが開いているか */
+	isMenuOpen: boolean;
 };
 const { isMenuOpen } = defineProps<Props>();
 
 const emits = defineEmits<{
-  (event: "toggleMenu"): void;
-  (event: "closeMenu"): void;
+	(event: "toggleMenu"): void;
+	(event: "closeMenu"): void;
 }>();
 </script>
 

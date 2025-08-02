@@ -5,22 +5,39 @@ const isModalVisible = ref(false);
 const currentIndex = ref(0);
 
 const imgs = [
-  { src: "/images/setting.png", title: "三面図\nデザイン/イラスト 乙原コウ様/Vグラ様/©︎LUZ\nVグラHP:https://www.vgra-luz.com/" },
-  { src: "/images/cursor.gif", title: "カーソル\nハル様\nhttps://x.com/dotshellty" },
-  { src: "/images/logo.png", title: "名前ロゴ\nいとへんちゃん様\nhttps://x.com/itohen_boy" },
-  { src: "/images/icon.png", title: "アイコン\nいとへんちゃん様\nhttps://x.com/itohen_boy" },
-  { src: "/images/standing.png", title: "素体図\nデザイン/イラスト 乙原コウ様/Vグラ様/©︎LUZ\nVグラHP:https://www.vgra-luz.com/" },
+	{
+		src: "/images/setting.png",
+		title:
+			"三面図\nデザイン/イラスト 乙原コウ様/Vグラ様/©︎LUZ\nVグラHP:https://www.vgra-luz.com/",
+	},
+	{
+		src: "/images/cursor.gif",
+		title: "カーソル\nハル様\nhttps://x.com/dotshellty",
+	},
+	{
+		src: "/images/logo.png",
+		title: "名前ロゴ\nいとへんちゃん様\nhttps://x.com/itohen_boy",
+	},
+	{
+		src: "/images/icon.png",
+		title: "アイコン\nいとへんちゃん様\nhttps://x.com/itohen_boy",
+	},
+	{
+		src: "/images/standing.png",
+		title:
+			"素体図\nデザイン/イラスト 乙原コウ様/Vグラ様/©︎LUZ\nVグラHP:https://www.vgra-luz.com/",
+	},
 ];
 
 const openModal = (index: number) => {
-  disableScroll();
-  currentIndex.value = index;
-  isModalVisible.value = true;
+	disableScroll();
+	currentIndex.value = index;
+	isModalVisible.value = true;
 };
 
 const closeModal = () => {
-  isModalVisible.value = false;
-  enableScroll();
+	isModalVisible.value = false;
+	enableScroll();
 };
 </script>
 

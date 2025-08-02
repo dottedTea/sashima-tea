@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import news from '@/assets/json/news.json';
-import { INTERNAL_URL } from '@/constants';
+import news from "@/assets/json/news.json";
+import { INTERNAL_URL } from "@/constants";
 
 const { isMobile } = useDevice();
 </script>

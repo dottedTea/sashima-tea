@@ -1,26 +1,24 @@
 <script setup lang="ts">
 import { enableScroll, disableScroll } from "@/utils";
-import { EXTERNAL_URL, INTERNAL_URL } from "@/constants"
+import { EXTERNAL_URL, INTERNAL_URL } from "@/constants";
 
 /** メニュー一覧 */
 const HEADER_NAVIGATION = [
-  {
-    label: '動画や実績など',
-    href: INTERNAL_URL.ABOUT,
-  },
-  {
-    label: 'ギャラリー',
-    href: INTERNAL_URL.GALLERY,
-  },
-  {
-    label: 'お問い合わせ',
-    href: EXTERNAL_URL.CONTACT,
-  },
+	{
+		label: "動画や実績など",
+		href: INTERNAL_URL.ABOUT,
+	},
+	{
+		label: "ギャラリー",
+		href: INTERNAL_URL.GALLERY,
+	},
+	{
+		label: "お問い合わせ",
+		href: EXTERNAL_URL.CONTACT,
+	},
 ] as const;
 
-const emits = defineEmits<{
-  (event: "closeMenu"): void;
-}>();
+const emits = defineEmits<(event: "closeMenu") => void>();
 
 onMounted(() => disableScroll());
 

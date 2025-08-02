@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    overflow: auto;
-    font-family: "Yuji Syuku", "Permanent Marker", "Noto Sans JP", sans-serif;
-    background-color: #DEEAC9;
-  }
+	html {
+		overflow: auto;
+		font-family: "Yuji Syuku", "Permanent Marker", "Noto Sans JP", sans-serif;
+		background-color: #deeac9;
+	}
 
-  body {
-    min-height: 100vh;
-  }
+	body {
+		min-height: 100vh;
+	}
 }
 
 .max-w-container {
-  @apply max-w-[1200px] mx-auto;
+	@apply max-w-[1200px] mx-auto;
 }
