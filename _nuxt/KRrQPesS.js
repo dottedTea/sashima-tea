@@ -1,4 +1,4 @@
-import{d as x,g as i,h as v,c as l,a as e,F as f,r as w,e as r,u as p,i as V,o as m,t as y,j as k,f as L}from"./BM32Ke3l.js";const C={class:"pb-8 px-5 max-w-container"},j={class:"grid md:grid-cols-3 gap-5"},B=["onClick"],E={class:"absolute bg-white/80 inset-x-0 bottom-0 p-2 grid text-center"},H={class:"whitespace-pre-wrap text-sm mt-2"},F=x({__name:"gallery",setup(M){const t=i(!1),s=i(0),o=[{src:"/images/setting.png",title:`三面図
+import{d as x,g as i,h as v,c as l,a as e,F as f,r as w,e as r,u as p,i as V,o as m,t as y,j as k,f as L}from"./CmCEiVDD.js";const C={class:"pb-8 px-5 max-w-container"},j={class:"grid md:grid-cols-3 gap-5"},B=["onClick"],E={class:"absolute bg-white/80 inset-x-0 bottom-0 p-2 grid text-center"},H={class:"whitespace-pre-wrap text-sm mt-2"},F=x({__name:"gallery",setup(M){const t=i(!1),s=i(0),o=[{src:"/images/setting.png",title:`三面図
 デザイン/イラスト 乙原コウ様/Vグラ様/©︎LUZ
 VグラHP:https://www.vgra-luz.com/`},{src:"/images/cursor.gif",title:`カーソル
 ハル様
