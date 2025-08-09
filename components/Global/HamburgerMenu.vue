@@ -9,6 +9,10 @@ const HEADER_NAVIGATION = [
     href: INTERNAL_URL.ABOUT,
   },
   {
+    label: "イバモン企画",
+    href: INTERNAL_URL.IBAMON,
+  },
+  {
     label: "ギャラリー",
     href: INTERNAL_URL.GALLERY,
   },
@@ -31,7 +35,7 @@ onUnmounted(() => enableScroll());
 
     <div class="bg-green h-full">
       <nav class="pt-10 md:pt-20">
-        <ul class="grid mx-auto md:grid-cols-[auto_auto_auto] gap-x-10 gap-y-8 justify-center">
+        <ul class="grid mx-auto md:grid-cols-[auto_auto_auto_auto] gap-x-10 gap-y-8 justify-center">
           <li v-for="{label, href} in HEADER_NAVIGATION" :key="label" class="text-center">
             <GlobalLink :href="href" @click="emits('closeMenu')">
               {{ label }}

@@ -4,6 +4,8 @@ export const INTERNAL_URL = {
   TOP: "/",
   /** 動画や実績など */
   ABOUT: "/about",
+  /** イバモン企画 */
+  IBAMON: "/ibamon",
   /** ギャラリー */
   GALLERY: "/gallery",
 } as const;
@@ -33,4 +35,6 @@ export const EXTERNAL_URL = {
   JSTQB: "https://jstqb.jp/index.html",
   /** CG-ARTS */
   CG_ARTS: "https://www.cgarts.or.jp/",
+  /** 絶対音感オトダマスター */
+  OTODAMASTER: "https://www.nintendo.co.jp/ds/software/yotj/index.html",
 } as const;
