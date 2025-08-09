@@ -14,6 +14,8 @@ export default {
         youtube: "#ff0033",
         tiktok: "#000000",
         red: "#CA5937",
+        purple: "#956996",
+        darkBrown: "#5C4843",
       },
       width: {
         container: "1280px",

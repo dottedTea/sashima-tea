@@ -4,6 +4,8 @@ export const INTERNAL_URL = {
   TOP: "/",
   /** 動画や実績など */
   ABOUT: "/about",
+  /** イバモン企画 */
+  IBAMON: "/ibamon",
   /** ギャラリー */
   GALLERY: "/gallery",
 } as const;
