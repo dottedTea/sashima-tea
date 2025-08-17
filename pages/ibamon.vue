@@ -4,17 +4,17 @@ import { OTODAMAS, EXTERNAL_URL } from "@/constants";
 const modalTarget = ref();
 
 const openModal = (clickedNickname: string) => {
-  const target = OTODAMAS.find(({nickname}) => nickname === clickedNickname);
+  const target = OTODAMAS.find(({ nickname }) => nickname === clickedNickname);
   modalTarget.value = target;
 
-  document.documentElement.style.overflow = 'hidden';
+  document.documentElement.style.overflow = "hidden";
 
   const dialog = document.querySelector(".dialog") as HTMLDialogElement;
   dialog.showModal();
 };
 
 const closeModal = () => {
-  document.documentElement.style.overflow = 'auto';
+  document.documentElement.style.overflow = "auto";
 
   const dialog = document.querySelector(".dialog") as HTMLDialogElement;
   dialog.close();
