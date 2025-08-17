@@ -21,6 +21,7 @@ export default {
         container: "1280px",
       },
       zIndex: {
+        modal: 200,
         menu: 150,
         header: 100,
         panel: 50,
