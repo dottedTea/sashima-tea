@@ -32,8 +32,24 @@ const VIDEOS = [
 /** 実績 */
 const ACHIEVEMENTS = [
   {
-    name: "第1回ご当地Vtuber PR王決定戦",
-    href: "https://vregion.jp/pr-event",
+    name: "東京ゲームショウ2025 動画放映&名刺配布",
+    description: "ncc新潟コンピュータ専門学校様の学生作品の成果発表として、ブース内にご当地VTuber図鑑とのコラボコーナーが設置されます。私の動画が放映され、名刺も配布されます。",
+    href: "https://x.com/GotochiVTuber/status/1963590067202793852",
+  },
+  {
+    name: "Faaast Penguin 公認大会 Vきゃらンジャー杯 優勝",
+    description: "広島県の紅華まさいもさん、福井県の巫薙りんかさんと共に「いもりんてぃー」というチームで出場しました。今回を機に初めてプレイするゲームでしたが、3人で連取を重ねて優勝することができました。",
+    href: "https://youtu.be/4HEMJvT4F00?si=IZtCW6L7MqaaJ-By",
+  },
+  {
+    name: "そらのうえショッピングモール 47都道府県ご当地ショップ応援大使 拝命",
+    description: "茨城の名産品を広めたく、メタバース上のショッピングモールから盛り上げていきます。ここでしか聞けない、茨城弁ボイスもあります。",
+    href: "https://soranoue.com/17839",
+  },
+  {
+    name: "第1回ご当地Vtuber PR王決定戦 出場",
+    description: "高知県のカツオをPRしました。ゲーム実況×カツオ、茨城×カツオなど、他にはない独自性のある企画で大会を盛り上げました。",
+    href: "https://www.youtube.com/playlist?list=PLlIIRUvyBd96XWWgecOdD3MQz0RPXk8we",
   },
 ] as const;
 
@@ -74,16 +90,17 @@ const CERTIFICATIONS = [
   <main class="pb-4 px-5 grid grid-cols-1 md:grid-cols-[1fr_320px] gap-4 max-w-container">
     <div class="space-y-4">
       <div>
-        <h2 class="text-xl mb-2 text-center">動画や実績など</h2>
+        <h2 class="text-xl mb-2 text-center">実績や経歴など</h2>
         <p class="text-center">何かあれば軽率に<GlobalLink :href="EXTERNAL_URL.CONTACT">お問い合わせ</GlobalLink>ください。全力でお手伝いさせていただきます！</p>
         <GlobalImage src="/images/setting.png" class="mt-2" />
       </div>
 
       <section class="bg-white/50 px-5 py-4">
         <h3>実績</h3>
-        <ul v-if="ACHIEVEMENTS.length > 0">
-          <li v-for="{name, href} in ACHIEVEMENTS" :key="name">
+        <ul v-if="ACHIEVEMENTS.length > 0" class="grid gap-2">
+          <li v-for="{name, description, href} in ACHIEVEMENTS" :key="name">
             ・<GlobalLink :href="href">{{ name }}</GlobalLink>
+            <p class="ml-4 text-sm opacity-60">{{ `${description}` }}</p>
           </li>
         </ul>
         <p v-else class="text-black/50 overflow-y-scroll h-16 md:h-32">・案件やお仕事など随時更新予定</p>

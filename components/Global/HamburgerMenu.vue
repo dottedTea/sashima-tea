@@ -5,7 +5,7 @@ import { EXTERNAL_URL, INTERNAL_URL } from "@/constants";
 /** メニュー一覧 */
 const HEADER_NAVIGATION = [
   {
-    label: "動画や実績など",
+    label: "実績や経歴など",
     href: INTERNAL_URL.ABOUT,
   },
   {

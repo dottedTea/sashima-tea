@@ -2,7 +2,7 @@
 export const INTERNAL_URL = {
   /** TOP */
   TOP: "/",
-  /** 動画や実績など */
+  /** 実績や経歴など */
   ABOUT: "/about",
   /** イバモン企画 */
   IBAMON: "/ibamon",
