@@ -4,7 +4,9 @@ import { OTODAMAS_MAIN, OTODAMAS_SUB, EXTERNAL_URL } from "@/constants";
 const modalTarget = ref();
 
 const openModal = (clickedNickname: string) => {
-  const target = [...OTODAMAS_MAIN, ...OTODAMAS_SUB].find(({ nickname }) => nickname === clickedNickname);
+  const target = [...OTODAMAS_MAIN, ...OTODAMAS_SUB].find(
+    ({ nickname }) => nickname === clickedNickname,
+  );
   modalTarget.value = target;
 
   document.documentElement.style.overflow = "hidden";
