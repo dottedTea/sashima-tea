@@ -19,7 +19,7 @@ const { isMobile } = useDevice();
           いばらき観光マイスターでありフロントエンドエンジニアです。
         </p>
         <GlobalLink :href="INTERNAL_URL.ABOUT">
-          動画や実績など詳しくはこちら →
+          実績や経歴など詳しくはこちら →
         </GlobalLink>
       </section>
 
