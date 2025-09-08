@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { OTODAMAS, EXTERNAL_URL } from "@/constants";
+import { OTODAMAS_MAIN, OTODAMAS_SUB, EXTERNAL_URL } from "@/constants";
 
 const modalTarget = ref();
 
 const openModal = (clickedNickname: string) => {
-  const target = OTODAMAS.find(({ nickname }) => nickname === clickedNickname);
+  const target = [...OTODAMAS_MAIN, ...OTODAMAS_SUB].find(({ nickname }) => nickname === clickedNickname);
   modalTarget.value = target;
 
   document.documentElement.style.overflow = "hidden";
@@ -48,9 +48,22 @@ const closeModal = () => {
           <GlobalLink :href="EXTERNAL_URL.OTODAMASTER" target="_blank">絶対音感オトダマスター</GlobalLink></span>
       </h2>
       <p>2007年にDSで発売された、音・言葉・リズムをマイクに入力し「オトダマ」を収集するPRG。私はポケモンにハマる前にこれにハマってました。続編出してくれないかなぁ。</p>
-      <h3 class="mt-8 mb-4 text-lg">仲間一覧<span class="text-sm">（2025/08/17更新）</span></h3>
-      <button class="grid grid-cols-3 md:grid-cols-6 gap-4">
-        <div v-for="({ nickname, src }) in OTODAMAS" :key="nickname">
+      <h3 class="mt-8 mb-4 text-lg">仲間一覧<span class="text-sm">（2025/09/08更新）</span></h3>
+      <button class="grid grid-cols-3 md:grid-cols-6 gap-4 w-full">
+        <div v-for="({ nickname, src }) in OTODAMAS_MAIN" :key="nickname">
+          <GlobalImage
+            :src="src || '/images/silhouette.png'"
+            :alt="nickname"
+            fit="inside"
+            preload
+            :class="src ? 'rounded-full w-full h-full' : 'opacity-50'"
+            @click="src && openModal(nickname)"
+          />
+        </div>
+      </button>
+      <h3 class="mt-4 mb-2">控え</h3>
+      <button class="grid grid-cols-3 md:grid-cols-6 gap-4 w-full">
+        <div v-for="({ nickname, src }) in OTODAMAS_SUB" :key="nickname">
           <GlobalImage
             :src="src || '/images/silhouette.png'"
             :alt="nickname"
