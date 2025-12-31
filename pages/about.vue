@@ -38,9 +38,15 @@ const ACHIEVEMENTS = [
     href: "https://www.youtube.com/live/hboa1IGaUDU?si=6Bd9VRHHSZPU17Ju",
   },
   {
+    name: "VDP2025 応援V大使 拝命",
+    description:
+      "VRChat上で行われるアナログゲームの祭典「Virtual Dice Party 2025」の応援V大使になりました。Xでのボードゲームの紹介や、ブースを回るお散歩配信をしました。",
+    href: "https://x.com/HitProjectV/status/1983438400263995732",
+  },
+  {
     name: "第2回ご当地VTuber PR王決定戦 出場",
     description:
-      "静岡県沼津市の「川正さんの砂干しのサバ」をPRしました。砂干しがなんたるかを追求するべく、沼津市に赴いてビーチの砂に埋まりました。沼津市公認VTuber西浦めめさんとのコラボも行いました。",
+      "沼津干物市場の「川正さんの砂干しのサバ」をPRしました。砂干しがなんたるかを追求するべく、沼津市に赴いてビーチの砂に埋まりました。沼津市公認VTuber西浦めめさんとのコラボも行いました。",
     href: "https://www.youtube.com/watch?v=p5fS5tCjWNA&list=PLlIIRUvyBd96XWWgecOdD3MQz0RPXk8we",
   },
   {

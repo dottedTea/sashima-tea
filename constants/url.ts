@@ -37,4 +37,6 @@ export const EXTERNAL_URL = {
   CG_ARTS: "https://www.cgarts.or.jp/",
   /** 絶対音感オトダマスター */
   OTODAMASTER: "https://www.nintendo.co.jp/ds/software/yotj/index.html",
+  /** Pokémon LEGENDS Z-A */
+  POKEMON_ZA: "https://www.pokemon.co.jp/ex/legends_z-a/ja/",
 } as const;

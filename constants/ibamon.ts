@@ -75,4 +75,87 @@ const OTODAMAS_SUB = [
   },
 ] as const;
 
-export { OTODAMAS_MAIN, OTODAMAS_SUB };
+const ZA_MAIN = [
+  {
+    nickname: "かがやき",
+    name: "エンブオー",
+    description:
+      "モチーフ：常陸の輝き\n茨城のブランド豚肉「常陸の輝き」を基にしている。食べないよ。",
+    src: "https://img.yakkun.com/poke/icon96/n500.gif",
+  },
+  {
+    nickname: "アクア",
+    name: "サメハダー",
+    description:
+      "モチーフ：アクアワールド茨城県大洗水族館\nサメの飼育種類が全国1位の水族館、アクアワールドを基にしている。約60種類ものサメを飼育している。",
+    src: "https://img.yakkun.com/poke/icon96/n319.gif",
+  },
+  {
+    nickname: "エドサキ",
+    name: "パンプジン",
+    description:
+      "モチーフ：江戸崎かぼちゃ\n稲敷市の名産品「江戸崎かぼちゃ」を基にしている。江戸崎かぼちゃフェアなるものもやっているよ。",
+    src: "https://img.yakkun.com/poke/icon96/n584.gif",
+  },
+  {
+    nickname: "かみねっちょ",
+    name: "カバルドン",
+    description:
+      "モチーフ：かみねっちょ\n日立市かみね動物園のマスコットキャラクター「かみねっちょ」を基にしている。色違いを捕まえたい。",
+    src: "https://img.yakkun.com/poke/icon96/n450.gif",
+  },
+  {
+    nickname: "りゅうじん",
+    name: "ボーマンダ",
+    description:
+      "モチーフ：竜神大吊橋\n全国2位の高さのバンジージャンプが飛べる「竜神大吊橋」を基にしている。常陸太田市の「ポケふた」にもボーマンダが描かれている。",
+    src: "https://img.yakkun.com/poke/icon96/n373.gif",
+  },
+  {
+    nickname: "ムコナ",
+    name: "ニャオニクス",
+    description:
+      "モチーフ：ムコナくん\nJR東日本水戸支社の常磐線特急E657系イメージキャラクター「ムコナくん」を基にしている。猫のキャラクター。",
+    src: "https://img.yakkun.com/poke/icon96/n678.gif",
+  },
+];
+
+const ZA_SUB = [
+  {
+    nickname: "ネモソフ",
+    name: "バイバニラ",
+    description:
+      "モチーフ：ネモフィラソフト\n国営ひたち海浜公園で売っている「ネモフィラソフト」を基にしている。春にきれいに咲くネモフィラ色のソフトクリーム。",
+    src: "https://img.yakkun.com/poke/icon96/n584.gif",
+  },
+  {
+    nickname: "ひたちおおた",
+    name: "ルチャブル",
+    description:
+      "モチーフ：常陸太田市のポケふた\nポケモンのマンホール「ポケふた」を基にしている。茨城県に6箇所あり、常陸太田市のポケふたにルチャブルが描かれている。",
+    src: "https://img.yakkun.com/poke/icon96/n701.gif",
+  },
+  {
+    nickname: "ヤンキー",
+    name: "ズルズキン",
+    description:
+      "モチーフ：ヤンキー\n茨城県に多く生息する「ヤンキー」を基にしている。腰パンしすぎてパンツ見えがち。",
+    src: "https://img.yakkun.com/poke/icon96/n560.gif",
+  },
+  {
+    nickname: "カサマロン",
+    name: "ブリガロン",
+    description:
+      "モチーフ：笠間の栗\n生産量と栽培面積が全国1位の「栗」を基にしている。特に笠間市で多く生産されている。",
+    src: "https://img.yakkun.com/poke/icon96/n652.gif",
+  },
+  {
+    nickname: "けんか",
+    name: "ロゼリア",
+    description:
+      "モチーフ：バラ\n茨城県の花である「バラ」を基にしている。県章もバラのつぼみが基となっている。",
+    src: "https://img.yakkun.com/poke/icon96/n315.gif",
+  },
+]
+
+export { OTODAMAS_MAIN, OTODAMAS_SUB, ZA_MAIN, ZA_SUB };

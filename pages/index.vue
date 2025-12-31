@@ -13,13 +13,13 @@ const { isMobile } = useDevice();
           茨城県公認VTuberを目指す、茶芝間ティー（さしまてぃー）と申します！
         </p>
         <p>
-          カイロソフトをメインとしたシミュレーションゲーム、茨城に関する動画を週5〜7本しています。
+          カイロソフトをメインとしたシミュレーションゲーム、茨城のご当地動画を発信しています。
         </p>
         <p>
-          いばらき観光マイスターでありフロントエンドエンジニアです。
+           いばらき観光マイスター認定者 / ご当地団体！Vきゃらンジャー / そらのうえショッピングモール ご当地館茨城応援大使 / VRegion friends 茨城担当
         </p>
         <GlobalLink :href="INTERNAL_URL.ABOUT">
-          実績や経歴など詳しくはこちら →
+          PR案件の実績や経歴など詳しくはこちら →
         </GlobalLink>
       </section>
 
@@ -40,7 +40,7 @@ const { isMobile } = useDevice();
         </section>
 
         <div class="w-full">
-          <iframe class="w-full aspect-video" src="https://www.youtube-nocookie.com/embed/videoseries?si=KHTmuBzDW839mp-e&amp;list=PLlIIRUvyBd95Xu0OtxPDx0SflFggHjfoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/uOqLmyvttTc?si=2sopNAXFFCqa8uVV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </template>
     </div>

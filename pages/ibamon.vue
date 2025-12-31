@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { OTODAMAS_MAIN, OTODAMAS_SUB, EXTERNAL_URL } from "@/constants";
+import { OTODAMAS_MAIN, OTODAMAS_SUB, ZA_MAIN, ZA_SUB, EXTERNAL_URL } from "@/constants";
 
 const modalTarget = ref();
 
@@ -83,20 +83,34 @@ const closeModal = () => {
       <h2 class="text-2xl grid grid-cols-[auto_1fr] gap-2 items-center mb-4">
         <div class="w-5 h-5 bg-purple rounded-full border-2 border-darkBrown" />
         <span>第二弾：<br class="md:hidden" />
-          <span target="_blank" class="text-orange">Coming soon...</span></span>
+          <GlobalLink :href="EXTERNAL_URL.POKEMON_ZA" target="_blank">Pokémon LEGENDS Z-A</GlobalLink></span>
       </h2>
-      <p>多分メジャーどころ</p>
       <h3 class="mt-8 mb-4 text-lg">仲間一覧<span class="text-sm"></span></h3>
-      <div class="grid grid-cols-3 md:grid-cols-6 gap-4">
-        <GlobalImage
-          v-for="index in 6"
-          :key="index"
-          src="/images/silhouette.png"
-          fit="inside"
-          preload
-          class="opacity-50"
-        />
-      </div>
+      <button class="grid grid-cols-3 md:grid-cols-6 gap-4 w-full">
+        <div v-for="({ nickname, src }) in ZA_MAIN" :key="nickname">
+          <GlobalImage
+            :src="src || '/images/silhouette.png'"
+            :alt="nickname"
+            fit="inside"
+            preload
+            :class="src ? 'rounded-full w-full h-full' : 'opacity-50'"
+            @click="src && openModal(nickname)"
+          />
+        </div>
+      </button>
+      <h3 class="mt-4 mb-2">控え</h3>
+      <button class="grid grid-cols-3 md:grid-cols-6 gap-4 w-full">
+        <div v-for="({ nickname, src }) in ZA_SUB" :key="nickname">
+          <GlobalImage
+            :src="src || '/images/silhouette.png'"
+            :alt="nickname"
+            fit="inside"
+            preload
+            :class="src ? 'rounded-full w-full h-full' : 'opacity-50'"
+            @click="src && openModal(nickname)"
+          />
+        </div>
+      </button>
     </section>
 
     <!-- ダイアログ -->
