@@ -1,4 +1,4 @@
-import{d as y,g as C,c as l,e as i,a as s,b as p,w as S,u as e,F as u,r as g,k as A,t as b,l as M,m as T,f as B,_ as E,o as r,E as N,n as k,p as O,q as V}from"./bQoog6Q5.js";const h=[{nickname:"ろっこく",name:"ロック",description:`モチーフ：国道6号線
+import{d as y,g as C,c as l,e as i,a as s,b as p,w as S,u as e,F as u,r as g,k as A,t as b,l as M,m as T,f as B,_ as E,o as r,E as N,n as k,p as O,q as V}from"./Dc6WnDbJ.js";const h=[{nickname:"ろっこく",name:"ロック",description:`モチーフ：国道6号線
 ロックバンドのオトダマ。茨城を南北に通る国道6号線（茨城県民は略して「ろっこく」と呼んでいる）を基にしている。ロック → 6 → ろっこく という少々無理がある関連付け方をしている。`,src:"/images/ibamon/rokkoku.png"},{nickname:"いしおさん",name:"ドガッツ",description:`モチーフ：いしおさん
 岩石のオトダマ。御影石がモチーフのゆるキャラ「いしおさん」を基にしている。御影石は墓石や建材として使われており、石岡市や桜川市などが産地となっている。`,src:"/images/ibamon/ishiosan.png"},{nickname:"だいほう",name:"ゴウフーン",description:`モチーフ：大宝八幡宮
 竜巻のオトダマ。大宝八幡宮で毎年夏に行われる「風鈴まつり」を基にしている。進化前は風鈴の形をしていたが、進化して面影をなくしてしまった。`,src:"/images/ibamon/daihou.png"},{nickname:"ひたちのき",name:"モックロック",description:`モチーフ：日立の樹
