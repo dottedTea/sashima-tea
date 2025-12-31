@@ -32,6 +32,24 @@ const VIDEOS = [
 /** 実績 */
 const ACHIEVEMENTS = [
   {
+    name: "海琳堂presents Vきゃらンジャー忘年会 出演",
+    description:
+      "海琳堂様の柴梅酒と合うおつまみをプレゼンしながら飲み比べる企画に参加しました。茨城の食材を使ったアレンジおつまみを提案しました。",
+    href: "https://www.youtube.com/live/hboa1IGaUDU?si=6Bd9VRHHSZPU17Ju",
+  },
+  {
+    name: "第2回ご当地VTuber PR王決定戦 出場",
+    description:
+      "静岡県沼津市の「川正さんの砂干しのサバ」をPRしました。砂干しがなんたるかを追求するべく、沼津市に赴いてビーチの砂に埋まりました。沼津市公認VTuber西浦めめさんとのコラボも行いました。",
+    href: "https://www.youtube.com/watch?v=p5fS5tCjWNA&list=PLlIIRUvyBd96XWWgecOdD3MQz0RPXk8we",
+  },
+  {
+    name: "ご当地自慢トークシヨウ 関東編2 出演",
+    description:
+      "そらのうえショッピングモール様にて行われる、各都道府県の魅力を自慢し合うトークイベントに出演しました。栗の名店「愛樹マロン」様にアポをとって取材し、イベント内で紹介させていただきました。",
+    href: "https://x.com/soranoue_s_mall/status/1971786883496550585",
+  },
+  {
     name: "東京ゲームショウ2025 動画放映&名刺配布",
     description:
       "ncc新潟コンピュータ専門学校様の学生作品の成果発表として、ブース内にご当地VTuber図鑑とのコラボコーナーが設置されます。私の動画が放映され、名刺も配布されます。",
@@ -40,20 +58,14 @@ const ACHIEVEMENTS = [
   {
     name: "Faaast Penguin 公認大会 Vきゃらンジャー杯 優勝",
     description:
-      "広島県の紅華まさいもさん、福井県の巫薙りんかさんと共に「いもりんてぃー」というチームで出場しました。今回を機に初めてプレイするゲームでしたが、3人で連取を重ねて優勝することができました。",
+      "ファーストペンギンの公認大会に、紅華まさいもさん・巫薙りんかさんと共に「いもりんてぃー」というチームで出場しました。今回を機に初めてプレイするゲームでしたが、チームで練習を重ねて優勝することができました。",
     href: "https://youtu.be/4HEMJvT4F00?si=IZtCW6L7MqaaJ-By",
   },
   {
-    name: "そらのうえショッピングモール 47都道府県ご当地ショップ応援大使 拝命",
+    name: "第1回ご当地VTuber PR王決定戦 出場",
     description:
-      "茨城の名産品を広めたく、メタバース上のショッピングモールから盛り上げていきます。ここでしか聞けない、茨城弁ボイスもあります。",
-    href: "https://soranoue.com/17839",
-  },
-  {
-    name: "第1回ご当地Vtuber PR王決定戦 出場",
-    description:
-      "高知県のカツオをPRしました。ゲーム実況×カツオ、茨城×カツオなど、他にはない独自性のある企画で大会を盛り上げました。",
-    href: "https://www.youtube.com/playlist?list=PLlIIRUvyBd96XWWgecOdD3MQz0RPXk8we",
+      "高知かわうそ市場の「藁焼きカツオ 切れてるたたき」をPRしました。ゲーム実況×カツオ、茨城×カツオなど、他にはない独創性のある企画で大会を盛り上げました。",
+    href: "https://www.youtube.com/watch?v=qZ4AG6D3bqg&list=PLlIIRUvyBd96XWWgecOdD3MQz0RPXk8we",
   },
 ] as const;
 
@@ -100,7 +112,7 @@ const CERTIFICATIONS = [
       </div>
 
       <section class="bg-white/50 px-5 py-4">
-        <h3>実績</h3>
+        <h3>PR案件などの実績</h3>
         <ul v-if="ACHIEVEMENTS.length > 0" class="grid gap-2">
           <li v-for="{name, description, href} in ACHIEVEMENTS" :key="name">
             ・<GlobalLink :href="href">{{ name }}</GlobalLink>

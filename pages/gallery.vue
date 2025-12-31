@@ -1,33 +1,9 @@
 <script setup lang="ts">
+import { images } from "@/constants/gallery";
 import { enableScroll, disableScroll } from "@/utils";
 
 const isModalVisible = ref(false);
 const currentIndex = ref(0);
-
-const imgs = [
-  {
-    src: "/images/setting.png",
-    title:
-      "三面図\nデザイン/イラスト 乙原コウ様/Vグラ様/©︎LUZ\nVグラHP:https://www.vgra-luz.com/",
-  },
-  {
-    src: "/images/cursor.gif",
-    title: "カーソル\nハル様\nhttps://x.com/dotshellty",
-  },
-  {
-    src: "/images/logo.png",
-    title: "名前ロゴ\nいとへんちゃん様\nhttps://x.com/itohen_boy",
-  },
-  {
-    src: "/images/icon.png",
-    title: "アイコン\nいとへんちゃん様\nhttps://x.com/itohen_boy",
-  },
-  {
-    src: "/images/standing.png",
-    title:
-      "素体図\nデザイン/イラスト 乙原コウ様/Vグラ様/©︎LUZ\nVグラHP:https://www.vgra-luz.com/",
-  },
-];
 
 const openModal = (index: number) => {
   disableScroll();
@@ -47,7 +23,7 @@ const closeModal = () => {
 
     <div class="grid md:grid-cols-3 gap-5">
       <div
-        v-for="({ src, title }, index) in imgs"
+        v-for="({ src, title }, index) in images"
         :key="index"
         class="pic cursor-pointer relative bg-black/50"
         @click="openModal(index)"
@@ -60,7 +36,7 @@ const closeModal = () => {
     </div>
     <VueEasyLightbox
       :visible="isModalVisible"
-      :imgs="imgs"
+      :imgs="images"
       :index="currentIndex"
       loop
       @hide="closeModal"
