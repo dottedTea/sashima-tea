@@ -1,7 +1,7 @@
 export const images = [
   {
     src: "/images/gallery/retro.png",
-    title: "レトロゲーム風SDキャラ\nハル様\nhttps://x.com/dotshellty"
+    title: "レトロゲーム風SDキャラ\nハル様\nhttps://x.com/dotshellty",
   },
   {
     src: "/images/setting.png",

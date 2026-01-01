@@ -1,12 +1,21 @@
 <script setup lang="ts">
-import { OTODAMAS_MAIN, OTODAMAS_SUB, ZA_MAIN, ZA_SUB, EXTERNAL_URL } from "@/constants";
+import {
+  OTODAMAS_MAIN,
+  OTODAMAS_SUB,
+  ZA_MAIN,
+  ZA_SUB,
+  EXTERNAL_URL,
+} from "@/constants";
 
 const modalTarget = ref();
 
 const openModal = (clickedNickname: string) => {
-  const target = [...OTODAMAS_MAIN, ...OTODAMAS_SUB].find(
-    ({ nickname }) => nickname === clickedNickname,
-  );
+  const target = [
+    ...OTODAMAS_MAIN,
+    ...OTODAMAS_SUB,
+    ...ZA_MAIN,
+    ...ZA_SUB,
+  ].find(({ nickname }) => nickname === clickedNickname);
   modalTarget.value = target;
 
   document.documentElement.style.overflow = "hidden";
@@ -50,6 +59,9 @@ const closeModal = () => {
           <GlobalLink :href="EXTERNAL_URL.OTODAMASTER" target="_blank">絶対音感オトダマスター</GlobalLink></span>
       </h2>
       <p>2007年にDSで発売された、音・言葉・リズムをマイクに入力し「オトダマ」を収集するPRG。私はポケモンにハマる前にこれにハマってました。続編出してくれないかなぁ。</p>
+      <div class="mx-auto w-full md:w-[50%] mt-4">
+        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/videoseries?si=vQCB9KDCpZLrr1cI&amp;list=PLlIIRUvyBd94r14qp_3U38SG0iihNDya6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
       <h3 class="mt-8 mb-4 text-lg">仲間一覧<span class="text-sm">（2025/09/08更新）</span></h3>
       <button class="grid grid-cols-3 md:grid-cols-6 gap-4 w-full">
         <div v-for="({ nickname, src }) in OTODAMAS_MAIN" :key="nickname">
@@ -85,7 +97,11 @@ const closeModal = () => {
         <span>第二弾：<br class="md:hidden" />
           <GlobalLink :href="EXTERNAL_URL.POKEMON_ZA" target="_blank">Pokémon LEGENDS Z-A</GlobalLink></span>
       </h2>
-      <h3 class="mt-8 mb-4 text-lg">仲間一覧<span class="text-sm"></span></h3>
+      <p>ポケモンレジェンズの最新作です。新しいメガ進化がいっぱいいて嬉しいです。</p>
+      <div class="mx-auto w-full md:w-[50%] mt-4">
+        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/videoseries?si=4CvyGfEhMa5o1b0D&amp;list=PLlIIRUvyBd97CsGwZ1bFNuwlPfxOSnfeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <h3 class="mt-8 mb-4 text-lg">仲間一覧<span class="text-sm">（2026/01/01更新）</span></h3>
       <button class="grid grid-cols-3 md:grid-cols-6 gap-4 w-full">
         <div v-for="({ nickname, src }) in ZA_MAIN" :key="nickname">
           <GlobalImage
